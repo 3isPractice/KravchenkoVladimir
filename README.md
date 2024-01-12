@@ -19,7 +19,7 @@
 <https://www.yandex.ru>
 
 <p align="center">
-  <img width="400" height="250" src="https://upload.wikimedia.org/wikipedia/commons/b/be/SGI-2016-South_Georgia_%28Fortuna_Bay%29%E2%80%93King_penguin_%28Aptenodytes_patagonicus%29_04.jpg">
+  <img width="400" height="250" src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg">
 </p>
 
 
