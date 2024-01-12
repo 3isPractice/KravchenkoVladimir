@@ -19,7 +19,7 @@
 <https://www.yandex.ru>
 
 <p align="center">
-  <img width="400" height="250" src="https://github.com/blademoon/Markdown/blob/main/Picture/cat.jpg">
+  <img width="400" height="250" src="https://upload.wikimedia.org/wikipedia/commons/b/be/SGI-2016-South_Georgia_%28Fortuna_Bay%29%E2%80%93King_penguin_%28Aptenodytes_patagonicus%29_04.jpg">
 </p>
 
 
