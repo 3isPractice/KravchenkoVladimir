@@ -1,4 +1,4 @@
-﻿# Меня зовут Кравченко Владимир. Это Первое задние на практике с картинко маленького пенгивна в среди своего обитания.
+﻿# Меня зовут Кравченко Владимир. Это Первое задние на практике с картинкой маленького пингивна в среди своего обитания.
 # Lorem Ipsum
 **Lorem** ipsum ***dolor*** sit __amet__, ___consectetur___ **adipiscing** elit. ~~Nam in elit a velit venenatis ultrices.~~ Duis tristique enim eget leo dictum auctor. Integer quis interdum sem, quis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer at neque leo. Donec auctor dui sed sem ullamcorper pulvinar nec et felis. Nullam lacinia faucibus dapibus. Pellentesque dapibus leo vitae accumsan convallis. Maecenas eget turpis ut ante bibendum consequat. Morbi id nisl tempor, lobortis neque ac, posuere est
 
