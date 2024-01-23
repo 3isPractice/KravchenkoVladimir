@@ -1,55 +1,95 @@
-﻿# Меня зовут Кравченко Владимир. Это Первое задние на практике с картинкой маленького пингивна в среди своего обитания.
-# Lorem Ipsum
-**Lorem** ipsum ***dolor*** sit __amet__, ___consectetur___ **adipiscing** elit. ~~Nam in elit a velit venenatis ultrices.~~ Duis tristique enim eget leo dictum auctor. Integer quis interdum sem, quis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer at neque leo. Donec auctor dui sed sem ullamcorper pulvinar nec et felis. Nullam lacinia faucibus dapibus. Pellentesque dapibus leo vitae accumsan convallis. Maecenas eget turpis ut ante bibendum consequat. Morbi id nisl tempor, lobortis neque ac, posuere est
+\```
+<Window x:Class="ColorPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Color Picker" Height="300" Width="400">
+    <Grid>
+        <Rectangle x:Name="colorRectangle" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Width="256" Height="108" Margin="59,16,77,0"/>
+        <Slider x:Name="redSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,143,0,105"/>
+        <Slider x:Name="greenSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,165,0,83"/>
+        <Slider x:Name="blueSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,187,0,61"/>
+        <TextBox x:Name="rgbTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="217,0,0,26"/>
+        <TextBox x:Name="hexTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="24,0,0,26"/>
+    </Grid>
+</Window>
+\```
 
-- Первый пункт неупорядоченного списка 
-* Второй пункт неупорядоченного списка
+\```cs
+using System;
+using System.Windows;
+using System.Windows.Media;
 
-1. Первый элемнт списка 
-   - Первый вложенный элемент списка 
-	 - Второй вложенный элемент списка 
+namespace ColorPicker
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            redSlider.ValueChanged += UpdateColor;
+            greenSlider.ValueChanged += UpdateColor;
+            blueSlider.ValueChanged += UpdateColor;
+        }
 
-1. Первый элемент списка	
-2. Второй элемент списка
+        private void UpdateColor(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            byte red = (byte)redSlider.Value;
+            byte green = (byte)greenSlider.Value;
+            byte blue = (byte)blueSlider.Value;
 
-&Alpha;
-
-[Ваза](https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%B7%D0%B0 "Необязательная подсказка, выводится при наведении курсора мыши")
-
-<blademoon@yandex.ru>
-<https://www.yandex.ru>
-
-<p align="center">
-  <img width="400" height="250" src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg">
-</p>
-
-
-```c++
-#include <iostream>
-
-using namespace std
-
-int main() {
-	cout << "This is a C++ code example!"
+            colorRectangle.Fill = new SolidColorBrush(Color.FromRgb(red, green, blue));
+            rgbTextBox.Text = $"RGB: {red}, {green}, {blue}";
+            hexTextBox.Text = $"#{red:X2}{green:X2}{blue:X2}";
+        }
+    }
 }
-```
+\```
 
 
-- [ ] ***Задача №1***
-- [X] **Отмеченная задача**
-- [ ] *Не выполненная задача*
+\```
+<Window x:Class="ColorPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Color Picker" Height="300" Width="400">
+    <Grid>
+        // 3 ошибки 
+        <Rectangle x:Name="colorRectangleEEEE" Fill="Bleck" HorizontalAlignment="Senter" VerticalAlignment="Top" Width="256" Height="108" Margin="59,16,77,0"/>
+        <Slider x:Name="redSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,143,0,105"/>
+        <Slider x:Name="greenSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,165,0,83"/>
+        <Slider x:Name="blueSlider" Minimum="0" Maximum="255" Value="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="256" Margin="59,187,0,61"/>
+        <TextBox x:Name="rgbTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="217,0,0,26"/>
+        <TextBox x:Name="hexTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="24,0,0,26"/>
+    </Grid>
+</Window>
+\```
 
 
-Первый столбик заголовка| Второй столбик заголовка
------------- | -------------
-Содержимое ячейки 1| Содержимое ячейки 2
-Содержимое ячейки 3 | Содержимое ячейки 4
+\```cs
+using System.Windowssss;
+using System.Windows.Media;
 
+namespace ColorPicker
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            redSlider.ValueChanged += UpdateColor;
+            greenSlider.ValueChanged += UpdateColor;
+            blueSlider.ValueChanged += UpdateColor;
+        }
 
->Это пример цитаты,
-в которой угловая скобка
-ставится только перед началом нового параграфа.
-
->Второй параграф.
-
-&Theta;&Lambda;&Sigma;&Omega;&beta;
+        private void UpdateColor(object sender, RoutedPropertyChangedEventArgs<doubbbble> e)
+        {
+            byte red = (byte)redSlider.Value;
+            byte green = (byte)greenSlider.Value;
+            byte blue = (byte)blueSlider.Value;
+            // у rgb 3 цвета red, green, blue
+            colorRectangle.Fill = new SolidColorBrush(Color.FromRgb(red, blue));
+            rgbTextBox.Text = $"RGB: {red}, {blue}";
+            hexTextBox.Text = $"#{red:X2}{green:X2}{blue:X1000000000}";
+        }
+    }
+}
+\```
