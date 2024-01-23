@@ -1,4 +1,5 @@
-\```
+# код без ошибок
+## XAMl
 <Window x:Class="ColorPicker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -12,9 +13,9 @@
         <TextBox x:Name="hexTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="24,0,0,26"/>
     </Grid>
 </Window>
-\```
 
-\```cs
+## CS
+
 using System;
 using System.Windows;
 using System.Windows.Media;
@@ -43,10 +44,10 @@ namespace ColorPicker
         }
     }
 }
-\```
 
 
-\```
+# код с ошибками
+## XAMl
 <Window x:Class="ColorPicker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -61,10 +62,10 @@ namespace ColorPicker
         <TextBox x:Name="hexTextBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="24,0,0,26"/>
     </Grid>
 </Window>
-\```
 
 
-\```cs
+
+## CS
 using System.Windowssss;
 using System.Windows.Media;
 
@@ -92,4 +93,3 @@ namespace ColorPicker
         }
     }
 }
-\```
